@@ -32,16 +32,16 @@ section nav{
     margin: 25px 0 20px 0;
 }
 
-section nav ul, .menu nav {
+section nav ul, .menu nav, .special nav {
     list-style: none;
 }
 
-section nav ul li, .menu nav ul li{
+section nav ul li, .menu nav ul li, .special nav ul li{
     display: inline-block;
     margin: 0 15px;
 }
 
-section nav ul li a, .menu nav ul li a {
+section nav ul li a, .menu nav ul li a, .special nav ul li a {
     text-decoration: none;
     color:black;
     font-weight: 500;
@@ -49,7 +49,7 @@ section nav ul li a, .menu nav ul li a {
     transition: 0.1s;
 }
 
-section nav ul li a::after, .menu nav ul li a::after{
+section nav ul li a::after, .menu nav ul li a::after, .special nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
@@ -58,11 +58,11 @@ section nav ul li a::after, .menu nav ul li a::after{
     transition: 0.2s linear;
 }
 
-section nav ul li a:hover::after, .menu nav ul li a:hover::after{
+section nav ul li a:hover::after, .menu nav ul li a:hover::after, .special nav ul li a:hover::after{
     width: 100%;
 }
 
-section nav li a:hover, .menu nav li a:hover {
+section nav li a:hover, .menu nav li a:hover, .special nav li a:hover {
     color: #fac031;
 }
 
@@ -111,7 +111,7 @@ section p{
     padding: 70px 0;
 }
 
-.menu nav{
+.menu nav, .special nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -150,7 +150,7 @@ section p{
 
 } */
 
-.menu_box .title-p {
+.menu_box .title-p, .special .title-p {
     margin: 30px 0;
     text-align: center;
     font-size: 35px;
@@ -380,7 +380,7 @@ section p{
 
 .team{
     width: 100%;
-    height: 900px;
+    height: 1100px;
     background-image: url(images/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -420,7 +420,7 @@ section p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 30px;
-    position: relative;
+    /* position: relative; */
     top: 13%;
 }
 
@@ -479,6 +479,61 @@ section p{
 
 .profile:hover .info .name{
     opacity: 1;
+}
+
+/* Specials */
+.special h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+    padding-top: 70px;
+}
+
+.special h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.special h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.videos {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    margin: 0 10px;
+}
+
+.poem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dream-poem {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
